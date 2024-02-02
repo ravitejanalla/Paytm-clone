@@ -1,9 +1,10 @@
 import './App.css';
-import ButtonContainer from './components/button/button-container';
+
+import LandingPage from './components/pages/landing-page';
 function App() {
   return (
-    <div className="App">
-      <ButtonContainer/>
+    <div className="container" >
+      <LandingPage/>
     </div>
   );
 }
