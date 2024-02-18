@@ -1,0 +1,2 @@
+export const defaultNavLinks=["Paytm for Consumer","paytm for Business","Investor Relations","Comapany","Careers"];
+export const businessNavLinks=["Accept Payments"," Gratification","Business Tools","Financial Services","Grow & Earn","Developer","Contact Us"];
