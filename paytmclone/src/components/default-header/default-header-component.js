@@ -1,15 +1,19 @@
 import Nav from "../common/nav";
-import { defaultNavLinks } from "../configs/navlinks";
+import Modal from "../common/model";
 import defaultLogo from "../images/logo.svg";
 import Logo from "../common/logo";
 import React from "react";
-const DefaultHeaderComponent = () => {
+
+const DefaultHeaderComponent = (props) => {
     return <div className="flex">
     <Logo src={defaultLogo}/>
-      <Nav menuItems = {defaultNavLinks}/>
-      <div>
-        <button className="btnSignIn">Sign In</button>
+      <Nav menuItems = {props.menuItems}/>
+      <div className="btnSignIn">
+        <button onClick={props.signInClickHandler}>Sign In</button>
+      {props.showModal && <Modal closeEventHandler={props.closeModalHandler}/>}
+     
       </div>
     </div>
 }
 export default DefaultHeaderComponent;
+
