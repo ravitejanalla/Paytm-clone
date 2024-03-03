@@ -3,6 +3,7 @@ import React from "react";
 import { loginForm } from "../../login-form/login-form";
 import "./modal-component.css";
 import {Row} from "reactstrap";
+
 const ModelComponent = (props) => {
     return <>
 
@@ -28,6 +29,8 @@ const ModelComponent = (props) => {
         })
        }
      <button className="loginBtn">LOGIN</button>
+     <button onClick={()=> props.login()}> sign with google</button>
+
        </div>
        </div>
        <div className="footer">By Signing in,you agree to our privacy policy and terms of use</div>
