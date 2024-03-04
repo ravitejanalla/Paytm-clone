@@ -29,7 +29,7 @@ const ModelComponent = (props) => {
         })
        }
      <button className="loginBtn">LOGIN</button>
-     <button onClick={()=> props.login()}> sign with google</button>
+     <button onClick={()=> props.login()}> Google</button>
 
        </div>
        </div>
