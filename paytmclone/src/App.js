@@ -6,7 +6,7 @@ import { paytm_routes } from './components/configs/routes-config';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
-    <GoogleOAuthProvider clientId="<your_client_id>">
+    <GoogleOAuthProvider clientId="222268781638-didtenvqh22g1477q2m2srmbfbj1nten.apps.googleusercontent.com">
     <div>
      <BrowserRouter>
   <Routes> 
