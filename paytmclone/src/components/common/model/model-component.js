@@ -28,7 +28,7 @@ const ModelComponent = (props) => {
             </Row> 
         })
        }
-     <button className="loginBtn">LOGIN</button>
+     <button className="loginBtn" onClick={()=>props.fetchLogin()}>LOGIN</button>
      <button onClick={()=> props.login()}> Google</button>
 
        </div>
