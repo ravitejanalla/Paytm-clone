@@ -1,17 +1,17 @@
 import React from "react";
 import ModelComponent from "./model-component";
 import { useGoogleLogin } from '@react-oauth/google';
-
+import { useNavigate } from "react-router-dom";
 
 import useFetch from "../../hooks/fetch";
 const ModelContainer = (props) =>{
   
   const [apiCall,setAPICall]= useFetch(null);
-
+   const navigate=useNavigate();
     const login = useGoogleLogin({
         onSuccess: response => { 
-         console.log(response);
-      // navigate('/DashBoardPage');
+        // console.log(response);
+       navigate('/DashBoardPage');
        localStorage.setItem('oauth_token',response.code);
       },
       onError: (response) => {
