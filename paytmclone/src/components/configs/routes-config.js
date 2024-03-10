@@ -3,6 +3,7 @@ import BusinessLandingPage from '../pages/business-page';
 import ErrorPage from '../pages/error-page';
 import React from 'react';
 import DashBoardPage from '../pages/dashboard';
+import ProductDetails from '../pages/Productdetails';
 export const paytm_routes=[
     {
         path:"/",
@@ -19,5 +20,9 @@ export const paytm_routes=[
     {
         path:"/DashBoardPage",
         component:<DashBoardPage/>
+    },
+    {
+        path:"/details/:id",
+        component:<ProductDetails/>
     }
 ]
