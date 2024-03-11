@@ -2,7 +2,7 @@ import React, { useEffect,useState } from "react";
 import {Container,Row,Col} from "reactstrap";
 import { Link } from "react-router-dom";
 import { client } from "./axiosConfigs";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 const DashBoardPage = () =>{
     // fetc(url,{
     //     method:"GET",
@@ -27,11 +27,11 @@ const DashBoardPage = () =>{
         {
            data && data.length>0 && data.map((item) => {
                 return <li>
-                    <h1>
+                    <h2>
                         {item.title}
-                    </h1>
+                    </h2>
                     <img src={item.thumbnail} alt="val"/>
-                    <span>Price: Rs.{item.price}</span>
+                    <p>Price: Rs.{item.price}</p>
                          <p>{item.description}</p>
                     <Link to={`/details/${item.id}`}>MOre details</Link>
                             <div className="btn_wrap">
