@@ -17,7 +17,8 @@ const DefaultHeaderContainer = (props) => {
     
         setShowModal(!showModal);
       }
-      const closeModalHandler = () =>{
+      const closeModalHandler = (event) =>{
+        event.preventDefault();
         setShowModal(false);
       }
       console.log("menu items",menuItems);
